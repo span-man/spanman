@@ -1,0 +1,203 @@
+/* dd-btn 按钮样式 注意：root 在小程序里还用不了 */
+
+:root {
+    --btn-padding: 3pt 13pt;
+}
+
+.dd-btn-red {
+    outline: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-color: #c82333;
+    color: white;
+    font-size: 12pt;
+    font-weight: 400;
+    text-align: center;
+    padding: 3pt 13pt;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.dd-btn-red:hover {
+    background-color: #b11f2d;
+}
+
+/* 圆角red btn */
+
+.dd-btn-red-c {
+    border: 1pt solid transparent;
+    width: 200pt;
+    height: 26pt;
+    background: #c82333;
+    color: white;
+    border-radius: 20pt;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    font-size: 12pt;
+    box-shadow: 0 0 5pt #ccc;
+}
+
+.dd-btn-ccc {
+    outline: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+    font-size: 12pt;
+    font-weight: 400;
+    text-align: center;
+    padding: var(--btn-padding);
+}
+
+.dd-btn-ccc:hover {
+    background-color: rgb(161, 160, 160);
+}
+
+.dd-btn-yellow {
+    outline: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-color: rgb(228, 228, 44);
+    color: #000000;
+    font-size: 12pt;
+    font-weight: 400;
+    text-align: center;
+    padding: 3pt 13pt;
+}
+
+.dd-btn-yellow:hover {
+    background-color: #97a834;
+}
+
+/* 圆角btn */
+
+.dd-btn-yellow-c {
+    border: 1pt solid transparent;
+    width: 200pt;
+    height: 26pt;
+    background: #e2ca2e;
+    border-radius: 20pt;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    font-size: 12pt;
+    box-shadow: 0 0 5pt #ccc;
+}
+
+.dd-btn-default {
+    border: 1pt solid #000;
+    width: 200pt;
+    height: 26pt;
+    background: transparent;
+    border-radius: 20pt;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    font-size: 12pt;
+    box-shadow: 0 0 5pt #ccc;
+}
+
+.dd-btn-green {
+    color: #fff;
+    border: 1pt solid transparent;
+    width: 200pt;
+    height: 26pt;
+    background: #93da95;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    font-size: 12pt;
+    box-shadow: 0 0 5pt #ccc;
+}
+
+.dd-btn-green-c {
+    color: #fff;
+    border: 1pt solid transparent;
+    width: 200pt;
+    height: 26pt;
+    background: #93da95;
+    border-radius: 20pt;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    font-size: 12pt;
+    box-shadow: 0 0 5pt #ccc;
+}
+
+/* 默认圆形的按钮 尺寸可以更改  */
+
+.dd-btn-circle {
+    width: 20pt;
+    height: 20pt;
+    background: #f1f1f1;
+    border: 2pt solid #ccc;
+    border-radius: 50%;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 美团 黄色主色调 */
+
+.mt-btn {
+    /* 固定内部元素居中 */
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    /* 固定内部元素居中等 一般上面这部分不变 */
+    /* 下面为可变的 */
+    width: 150px;
+    height: 66px;
+    font-size: 24px;
+    border-radius: 5px;
+    border: 1px solid #666;
+}
+
+.mt-btn-yellow {
+    /* 固定内部元素居中 */
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    /* 固定内部元素居中等 一般上面这部分不变 */
+    /* 下面为可变的 */
+    width: 150px;
+    height: 66px;
+    background: #ffc848;
+    font-size: 24px;
+    border-radius: 5px;
+}
+/* 占满一行的 */
+.mt-aline-btn-yellow {
+      /* 固定内部元素居中 */
+      outline: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      /* 固定内部元素居中等 一般上面这部分不变 */
+      /* 下面为可变的 */
+    width: 100%;
+    height: 80px;
+    background: #ffc848;
+    font-size: 30px;
+    border-radius: 0;
+}

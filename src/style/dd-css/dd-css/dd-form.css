@@ -1,0 +1,206 @@
+/* 深灰色浅色两种 色调 */
+
+:root {
+    --dd-input-height: 34px;
+    --dd-color-dark: #212934;
+    --dd-color-light: #ffce92;
+    --dd-bg-dark: #212934;
+    --dd-bg-dark-plus: #101925;
+    --dd-bg-light: #f1f1f1;
+    --dd-border-light: 1px solid #e07420;
+    --dd-border-dark: 1px solid #212934;
+    --dd-box-shadow-light: 0 1px 5px #e07420;
+    --dd-box-shadow-dark: 0 1px 5px #212934;
+    --dd-input-fontSize: 14px;
+    --dd-border-radius-size:18px;
+}
+input,button{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+}
+.dd-form {
+    width: 100%;
+    background: transparent;
+}
+
+/* 表单的每一行 */
+
+.dd-formLine {
+    background: #444;
+    /* height: var(--dd-input-height); */
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: var(--dd-border-light);
+    align-items: center;
+    padding:0 5px;
+}
+
+/* label */
+
+.dd-label {
+    font-size: 11pt;
+    font-weight: bold;
+    /* background: #212934; */
+    display: flex;
+    height: var(--dd-input-height);
+    width: 60pt;
+    align-items: center;
+    justify-content: left;
+    margin-right: 10px;
+    padding-left: 10pt;
+    color: var(--dd-color-light);
+}
+
+.dd-label-c {
+    font-size: 11pt;
+    font-weight: bold;
+    display: flex;
+    height: var(--dd-input-height);
+    width: 60pt;
+    align-items: center;
+    justify-content: left;
+    margin-right: 10px;
+    padding-left: 10pt;
+    color: var(--dd-color-light);
+    border-radius: var(--dd-border-radius-size);
+}
+
+/* 包裹 dd-input 的标签 */
+
+.dd-input-cell {
+    flex: 1;
+    /* background: #fff; */
+    margin: 0;
+    padding: 0;
+    height: var(--dd-input-height);
+}
+
+.dd-input {
+    flex: 1;
+    height: var(--dd-input-height);
+    width: 100%;
+    padding: 0 8px;
+    border: var(--dd-border-dark);
+    font-size: var(--dd-input-fontSize);
+}
+
+.dd-input:focus {
+    box-shadow: var(--dd-box-shadow-light);
+}
+
+.dd-input-c {
+    flex: 1;
+    height: var(--dd-input-height);
+    width: 100%;
+    padding: 0 8px;
+    border: var(--dd-border-dark);
+    border-radius: var(--dd-border-radius-size);
+    font-size: var(--dd-input-fontSize);
+}
+
+.dd-input-c:focus {
+    box-shadow: var(--dd-box-shadow-light);
+}
+
+/* search */
+.dd-search{
+    
+}
+.dd-search-input {
+    flex: 1;
+    height: var(--dd-input-height);
+    padding: 0 6px;
+    margin: 0;
+    outline: 0;
+    font-size: var(--dd-input-fontSize);
+}
+.dd-search-input:focus {
+    box-shadow: var(--dd-box-shadow-light)
+}
+
+.dd-search-button {
+    background-color: var(--dd-bg-dark);
+    color: var(--dd-color-light);
+    /* border: var(--dd-border-light); */
+    height: var(--dd-input-height);
+    padding: 0 10pt;
+}
+.dd-search-button:hover {
+    background-color: var(--dd-bg-dark-plus);
+}
+/* 曲面边框 */
+.dd-search-input-c {
+    flex: 1;
+    height: var(--dd-input-height);
+    padding: 0 14px;
+    margin: 0;
+    outline: 0;
+    font-size: var(--dd-input-fontSize);
+    border-radius: var(--dd-border-radius-size) 0 0 var(--dd-border-radius-size);
+}
+.dd-search-input-c:focus {
+    box-shadow: var(--dd-box-shadow-light)
+}
+
+.dd-search-button-c {
+    background-color: var(--dd-bg-dark);
+    color: var(--dd-color-light);
+    /* border: var(--dd-border-light); */
+    height: var(--dd-input-height);
+    padding: 0 10pt;
+    border-radius: 0 var(--dd-border-radius-size) var(--dd-border-radius-size) 0 ;
+}
+.dd-search-button-c:hover {
+    background-color: var(--dd-bg-dark-plus);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* dd-input 右边的部分 */
+
+.dd-input-right {
+    max-width: 100pt;
+    height: var(--dd-input-height);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--dd-bg-dark);
+    text-align: center;
+    font-size: 10pt;
+}
+
+/* 这里写 注册 登陆 重登 的 组件的样式*/
+
+.dd-top-tips {
+    z-index: 999;
+    height: 20pt;
+    background: #7b103a;
+    color: #fff;
+    font-size: 11pt;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    width: 100vw;
+}

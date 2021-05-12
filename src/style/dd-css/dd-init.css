@@ -1,0 +1,376 @@
+
+/* 9999999999999999999999999-----form----------99999999999999999 */
+@import "./dd-css/dd-form.css";/* form 表单元素 */
+@import "./dd-css/dd-button.css";/* button 按钮元素 */
+/* 6666666666666666666666666-----form----------66666666666666666 */
+
+
+/* init */
+
+.dd-clear {
+    zoom: 1;
+}
+
+.dd-clear:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.dd-fl {
+    float: left;
+}
+
+.dd-fr {
+    float: right;
+}
+
+
+/* 标题带前标记的 */
+
+.dd-title {
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 10pt 0;
+}
+
+.dd-title::before {
+    content: "| ";
+    color: #ccc;
+    font-weight: bold;
+}
+
+/* 中间主题部分 */
+
+.dd-content {
+    width: 750px;
+    background-color: #fff;
+}
+
+.dd-title1 {
+    font-size: 14pt;
+    font-weight: bold;
+    margin: 10pt 0;
+}
+
+.dd-title1::before {
+    content: "| ";
+    color: red;
+    font-weight: bold;
+}
+
+.dd-title2 {
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 10pt 0;
+}
+
+.dd-title2::before {
+    content: "| ";
+    color: orange;
+    font-weight: bold;
+}
+
+/* 默认的分块 */
+
+.dd-kuai {
+    background: #fff;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* 参照美团的分块 */
+.mt-kuai{
+	margin: 20px 20px 0 20px;
+	background: #ccc;
+	min-height: 40px;
+ 
+}
+
+
+
+/*大段的文字  */
+
+.dd-column {
+    font-size: 11pt;
+    padding: 0pt;
+    width: 100%;
+}
+
+.dd-row {
+    display: flex;
+    flex-direction: row;
+}
+/* 自动换行 */
+.dd-warp{
+    flex-wrap: wrap;
+}
+
+.dd-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/*固定到底部  */
+
+.dd-fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%
+}
+
+/*固定到顶部  */
+
+.dd-fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* flex水平居中同时垂直居中 */
+
+.dd-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.dd-text-center {
+    text-align: center;
+}
+
+/* 水平居中 */
+
+.dd-h-center {
+    justify-content: center;
+    text-align: center;
+}
+
+/* 垂直居中 */
+
+.dd-v-center {
+    align-items: center;
+}
+
+/* 一个内部元素 水平靠右边 */
+
+.dd-h-right {
+    justify-content: flex-end;
+}
+
+/* 两个内部元素 靠在两边 */
+
+.dd-h-2side {
+    justify-content: space-between;
+}
+
+/* 字符靠左  */
+
+.dd-text-left {
+    text-align: left;
+}
+
+/* 字符靠右  */
+
+.dd-text-right {
+    text-align: right;
+}
+
+/* 另一边宽度固定后， 这边宽度自适应  */
+
+.dd-flex1 {
+    flex: 1;
+}
+
+/* 块元素化 */
+
+.dd-db {
+    display: block;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+/* 省略多余的文字 */
+
+.dd-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 全屏显示 */
+
+.full-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* 常用 margin padding  */
+
+.dd-mgt10 {
+    margin-top: 10pt;
+}
+
+.dd-mgt20 {
+    margin-top: 20pt;
+}
+
+.dd-mgb10 {
+    margin-bottom: 10pt;
+}
+
+.dd-mgb20 {
+    margin-bottom: 20pt;
+}
+
+/*  模态框  */
+
+.dd-model {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* 模态窗中间的主体部分 */
+
+.dd-model-content {
+    margin: 10pt auto;
+    width: 80vw;
+    min-height: 200pt;
+    /* background: #f1f1f1; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 模态窗的上半部分 */
+
+.dd-model-content-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 5pt;
+}
+
+/* 中间部分 */
+
+.dd-model-content-body {
+    background: #fff;
+    padding: 5pt;
+}
+
+/* 关闭 */
+
+.dd-model-content-close {
+    background: transparent;
+}
+
+/* 关闭的 图片 */
+
+.dd-model-content-close-img {
+    /* background: #fff; */
+    width: 24pt;
+    height: 24pt;
+}
+
+.dd-model-content-foot {
+    min-height: 20pt;
+    /* background: #444; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 5pt;
+}
+
+/* 块 小程序内部的默认分块  */
+
+.kuai {
+    box-sizing: border-box;
+    box-shadow: 0 0 5pt #ccc;
+    width: 90%;
+    margin: 0 5%;
+    padding: 8pt;
+}
+
+/* color */
+
+/* 常用颜色 */
+
+.dd-c_o {
+    color: orange;
+}
+
+.dd-c_c {
+    color: #ccc;
+}
+
+.dd-c_r {
+    color: red;
+}
+
+.dd-mistake {
+    font-size: 10pt;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* dd-num-box 数量多少的盒子 */
+
+.dd-num-box {}
+
+.dd-num-box .dd-num {
+    margin: 0 5pt;
+    font-size: 12pt
+}
+
+.dd-line-btn-red{
+    padding: 5px 20px;
+    border: 1px solid #fb4e44;
+    color: #fb4e44;
+}
+
+
+.dd-pr{
+    position: relative;
+}
+
+.dd-pa{
+    position: absolute;
+}
+
+
+/* end init */
